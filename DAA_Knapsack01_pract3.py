@@ -1,6 +1,11 @@
 # DAA Practical 3: 0/1 Knapsack using Dynamic Programming
 # Each item is either taken completely (1) or not taken (0) - no fractions allowed.
 # Formula: dp[i][w] = max( dp[i-1][w] , value[i] + dp[i-1][w - weight[i]] )
+#
+# Sample input : weights = [2, 3, 4, 5], values = [3, 4, 5, 6], capacity = 5
+# Sample output: Maximum value : 7, Items chosen : [1, 2], Total weight : 5
+# Sample input : weights = [3, 4, 6, 5], values = [2, 3, 1, 4], capacity = 8
+# Sample output: Maximum value : 6, Items chosen : [1, 4], Total weight : 8
 
 
 def knapsack(weights, values, capacity):      # returns best value, chosen items and the DP table

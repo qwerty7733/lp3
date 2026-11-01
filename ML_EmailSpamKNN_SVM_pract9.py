@@ -10,7 +10,7 @@ from sklearn.svm import SVC                                   # Support Vector M
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report   # evaluation
 
 HERE = os.path.dirname(os.path.abspath(__file__))             # folder of this script
-df = pd.read_csv(os.path.join(HERE, "..", "datasets", "emails.csv"))   # 5172 emails x 3002 columns
+df = pd.read_csv(os.path.join(HERE, "..", "datasets", "emails.csv"))   # 5171 emails x 3002 columns
 print("Shape:", df.shape)                                     # rows = emails, columns = words
 print("Missing values:", df.isnull().sum().sum())             # should be 0
 print("Class counts:\n", df["Prediction"].value_counts())    # how many spam and not-spam emails

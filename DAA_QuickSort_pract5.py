@@ -1,6 +1,12 @@
 # DAA Practical 5: Quick Sort - Deterministic vs Randomized
 # Deterministic : pivot is ALWAYS the last element  -> sorted input gives worst case O(n^2)
 # Randomized    : pivot is a RANDOM element         -> expected O(n log n) for any input
+#
+# Sample input : [10, 7, 8, 9, 1, 5]
+# Sample output: Sorted: [1, 5, 7, 8, 9, 10]
+# Sample input : already sorted list of n = 1000 numbers
+# Sample output: Deterministic makes 499,500 comparisons (worst case n(n-1)/2),
+#                Randomized makes only about 10,000 to 12,000 comparisons
 
 import random                                 # random is used to pick a random pivot and make test data
 import sys                                    # sys lets us raise Python's recursion limit

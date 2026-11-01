@@ -1,5 +1,13 @@
 # DAA Practical 4: N-Queens with the FIRST queen already placed, rest placed by Backtracking
 # Rule: no two queens may share the same row, column or diagonal.
+#
+# Sample input : N = 4, first queen at row 1, column 2
+# Sample output:   0 1 0 0
+#                  0 0 0 1      (1 = queen, 0 = empty)
+#                  1 0 0 0
+#                  0 0 1 0
+# Sample input : N = 4, first queen at row 1, column 1
+# Sample output: No solution possible with this first queen.
 
 
 def is_safe(board, row, col):                 # can a queen be put at (row, col)?
